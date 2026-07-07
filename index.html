@@ -335,6 +335,40 @@
     }
     .btn-buy:hover { background: #8a5530; transform: translateY(-1px); }
 
+    .service-card--featured {
+      background: rgba(166,106,63,0.10);
+      border: 1px solid var(--gold);
+      position: relative;
+    }
+    .service-card--featured:hover { background: rgba(166,106,63,0.16); }
+    .service-badge {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--cream);
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.7rem;
+      margin-bottom: 1rem;
+    }
+    .btn-extrait {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-top: 1.1rem;
+      color: var(--cream);
+      background: rgba(247,243,238,0.1);
+      border: 1px solid rgba(247,243,238,0.35);
+      text-decoration: none;
+      padding: 0.65rem 1.2rem;
+      font-size: 0.82rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .btn-extrait:hover { background: rgba(247,243,238,0.18); border-color: var(--cream); }
+
     /* FAQ */
     .faq-list {
       max-width: 780px;
@@ -404,6 +438,8 @@
       <div style="font-size:0.68rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--gold); font-weight:600; margin-top:0.15rem;">Praticienne en Psychogénéalogie</div>
     </div>
     <div style="display:flex; align-items:center; gap:1rem;">
+      <a href="/prenoms.html" style="color:var(--dark); font-size:0.85rem; font-weight:500; letter-spacing:0.03em; text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--dark)'">Prénoms</a>
+      <span style="font-size:0.75rem; color:var(--muted); letter-spacing:0.02em;">Suis-moi sur</span>
       <a href="https://www.instagram.com/sylviabesuchet/" target="_blank" aria-label="Instagram" style="color:var(--dark); transition:color 0.2s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--dark)'">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
       </a>
@@ -457,16 +493,17 @@
         <h3>Séance individuelle</h3>
         <p>Une heure ensemble pour explorer votre arbre, décoder vos schémas familiaux et identifier les loyautés invisibles qui vous freinent. Un espace confidentiel, sans jugement.</p>
         <div class="service-price">80 €<span>/ séance</span></div>
-        <a href="https://buy.stripe.com/9B69ASbpt0l3fBKffy6wE00" target="_blank" class="btn-buy">Réserver ma séance →</a>
+        <a href="#rdv" class="btn-buy">Réserver ma séance →</a>
       </div>
-      <div class="service-card">
+      <div class="service-card service-card--featured">
+        <span class="service-badge">★ Le plus demandé</span>
         <div class="service-icon">📖</div>
         <h3>Livret personnalisé</h3>
         <p>Un livret digital complet réalisé pour vous — analyse de votre prénom et décodage de vos transmissions transgénérationnelles. Un outil à garder et relire.</p>
         <div class="service-price">39 €<span>/ livret</span></div>
         <a href="https://ko-fi.com/sylviaanalyse/shop" target="_blank" class="btn-buy">Commander mon livret →</a>
-        <div style="margin-top:1rem;">
-          <a href="https://tally.so/r/68PPDJ" target="_blank" style="color:rgba(247,243,238,0.55); font-size:0.82rem; text-decoration:underline;">Recevoir un extrait gratuit d'abord →</a>
+        <div>
+          <a href="https://tally.so/r/68PPDJ" target="_blank" class="btn-extrait">🎁 Recevoir un extrait gratuit d'abord</a>
         </div>
       </div>
     </div>
@@ -606,7 +643,7 @@
       <p>Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez d'un droit d'accès, de rectification, de suppression et de portabilité de vos données. Pour exercer ces droits, contactez : <span style="color:var(--gold);">sbesuchet@gmail.com</span></p>
 
       <h3 style="color:var(--cream); font-family:'Playfair Display',serif; font-weight:400; font-size:1.1rem; margin:1.8rem 0 0.6rem;">6. Hébergement</h3>
-      <p>Ce site est hébergé par Netlify, Inc. — 512 2nd Street, Suite 200, San Francisco, CA 94107, USA.</p>
+      <p>Ce site est hébergé par GitHub, Inc. (GitHub Pages) — 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA.</p>
 
       <h3 style="color:var(--cream); font-family:'Playfair Display',serif; font-weight:400; font-size:1.1rem; margin:1.8rem 0 0.6rem;">7. Cookies</h3>
       <p>Ce site n'utilise pas de cookies publicitaires ni de traceurs. Calendly et Stripe peuvent utiliser leurs propres cookies dans le cadre de leurs services — consultez leurs politiques respectives pour plus d'informations.</p>
