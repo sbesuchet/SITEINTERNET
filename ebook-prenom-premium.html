@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Analyse Premium de Prénom — Version complète | Sylvia Besuchet</title>
+  <meta name="description" content="Analyse Premium de prénom transgénérationnelle — livret 30 pages, analyse des grands-parents, 5 méditations audio exclusives. La version la plus complète." />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --creme:   #F7F3EE;
+      --bordeaux:#5A2E2A;
+      --dore:    #A66A3F;
+      --brun:    #8A7355;
+      --ligne:   rgba(90,46,42,0.15);
+      --vert:    #3D4A3A;
+    }
+
+    body {
+      background: var(--creme);
+      color: var(--bordeaux);
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 19px;
+      line-height: 1.6;
+    }
+
+    h1, h2, h3, .brand { font-family: 'Playfair Display', serif; color: var(--bordeaux); }
+
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 0 5vw 100px; }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 5vw;
+      background: rgba(247,243,238,0.92);
+      border-bottom: 1px solid var(--ligne);
+      margin-bottom: 3rem;
+    }
+    .nav-name { font-family: 'Playfair Display', serif; font-size: 1.25rem; color: var(--bordeaux); text-decoration: none; }
+    .nav-back {
+      color: var(--bordeaux); font-size: 0.82rem; font-weight: 600; letter-spacing: 0.06em;
+      text-transform: uppercase; text-decoration: none; font-family: 'Playfair Display', serif;
+    }
+    .nav-back:hover { color: var(--dore); }
+
+    .produit {
+      display: grid;
+      grid-template-columns: minmax(260px, 400px) 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+    @media (max-width: 760px) {
+      .produit { grid-template-columns: 1fr; }
+    }
+
+    .couverture img {
+      width: 100%;
+      border-radius: 4px;
+      box-shadow: 0 20px 50px rgba(90,46,42,0.18);
+    }
+
+    .badge-premium {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--vert);
+      color: #E8C97A;
+      font-family: 'Playfair Display', serif;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+    }
+
+    h1.titre {
+      font-size: clamp(28px, 4vw, 40px);
+      font-weight: 600;
+      line-height: 1.22;
+      margin-bottom: 10px;
+    }
+    h1.titre .gold { color: var(--dore); }
+
+    .soustitre {
+      color: var(--brun);
+      font-size: 20px;
+      font-style: italic;
+      margin-bottom: 28px;
+    }
+
+    ul.points {
+      list-style: none;
+      margin-bottom: 32px;
+    }
+    ul.points li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--ligne);
+      font-size: 18px;
+    }
+    ul.points li:last-child { border-bottom: none; }
+    ul.points .puce { color: var(--dore); font-size: 22px; flex-shrink: 0; line-height: 1; }
+    ul.points .inclus {
+      display: inline-block;
+      background: var(--bordeaux);
+      color: var(--creme);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      padding: 2px 8px;
+      border-radius: 3px;
+      margin-left: 8px;
+      vertical-align: middle;
+    }
+
+    .infos-format {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      color: var(--brun);
+      font-size: 16px;
+      margin-bottom: 32px;
+    }
+
+    .prix-bloc {
+      background: var(--vert);
+      border: 1px solid var(--vert);
+      border-radius: 4px;
+      padding: 28px;
+      margin-bottom: 20px;
+      color: var(--creme);
+    }
+    .prix-bloc .label-premium {
+      font-family: 'Playfair Display', serif;
+      font-size: 13px;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: #E8C97A;
+      margin-bottom: 8px;
+    }
+    .prix {
+      font-family: 'Playfair Display', serif;
+      font-size: 34px;
+      color: var(--creme);
+      font-weight: 600;
+      margin-bottom: 18px;
+    }
+
+    .btn-commander {
+      display: block;
+      width: 100%;
+      text-align: center;
+      background: #E8C97A;
+      color: var(--vert);
+      text-decoration: none;
+      padding: 18px 24px;
+      font-family: 'Playfair Display', serif;
+      font-size: 17px;
+      font-weight: 600;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+      border-radius: 3px;
+      transition: background .25s, transform .25s;
+    }
+    .btn-commander:hover { background: #fff; transform: translateY(-1px); }
+
+    .rassurance {
+      font-size: 15px;
+      color: rgba(247,243,238,0.7);
+      text-align: center;
+      margin-top: 14px;
+    }
+
+    .partenaire-note {
+      font-size: 15px;
+      color: var(--brun);
+      margin-top: 18px;
+      line-height: 1.5;
+      padding-left: 14px;
+      border-left: 2px solid var(--ligne);
+    }
+
+    .lien-standard {
+      margin-top: 24px;
+      font-size: 16px;
+      color: var(--brun);
+    }
+    .lien-standard a { color: var(--dore); }
+
+    .recap-inclus {
+      margin-top: 60px;
+      padding-top: 50px;
+      border-top: 1px solid var(--ligne);
+    }
+    .recap-inclus h2 {
+      font-size: 26px;
+      font-weight: 600;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+    .recap-grille {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 24px;
+      text-align: center;
+    }
+    .recap-item .icone { font-size: 28px; margin-bottom: 10px; }
+    .recap-item h4 { font-size: 17px; font-weight: 600; margin-bottom: 6px; }
+    .recap-item p { font-size: 15px; color: var(--brun); }
+
+    footer {
+      text-align: center;
+      padding: 3rem 5vw 0;
+      color: var(--brun);
+      font-size: 15px;
+    }
+    footer a { color: var(--bordeaux); }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/" class="nav-name">Sylvia Besuchet</a>
+    <a href="/" class="nav-back">← Retour à l'accueil</a>
+  </nav>
+
+  <div class="wrap">
+    <div class="produit">
+
+      <div class="couverture">
+        <img src="ebook-prenom-premium-cover.png" alt="Couverture de l'Analyse Premium de Prénom, version la plus complète, par Sylvia Besuchet" />
+      </div>
+
+      <div class="contenu">
+        <span class="badge-premium">💎 Version Premium</span>
+        <h1 class="titre">Découvrez l'histoire cachée derrière <span class="gold">votre prénom</span></h1>
+        <p class="soustitre">La version la plus complète — Psychogénéalogie &amp; Mémoires Familiales</p>
+
+        <ul class="points">
+          <li><span class="puce">◆</span> Ebook PDF 30 pages — 13 sections d'analyse complète et personnalisée</li>
+          <li><span class="puce">◆</span> Analyse de vos grands-parents <span class="inclus">Inclus</span></li>
+          <li><span class="puce">◆</span> 5 méditations audio exclusives transgénérationnelles <span class="inclus">Inclus</span></li>
+          <li><span class="puce">◆</span> Mémoires &amp; dynamiques héritées — schémas émotionnels et loyautés invisibles</li>
+          <li><span class="puce">◆</span> Étymologie, mémoires, dynamiques — sens originel et clés de transformation</li>
+        </ul>
+
+        <div class="infos-format">
+          <span>📄 PDF personnalisé</span>
+          <span>📖 30 pages · 13 sections</span>
+          <span>🎧 5 audios inclus</span>
+          <span>⬇ Livraison numérique</span>
+        </div>
+
+        <div class="prix-bloc">
+          <p class="label-premium">Analyse Premium</p>
+          <div class="prix">59 €</div>
+          <a href="https://buy.stripe.com/fZu28qalp9VDcpy1oI6wE02" target="_blank" rel="noopener" class="btn-commander">
+            Achetez maintenant
+          </a>
+          <p class="rassurance">Paiement sécurisé par Stripe · Accès immédiat après complétion de vos informations</p>
+        </div>
+
+        <p class="partenaire-note">
+          <strong>Un thérapeute vous a recommandé cette analyse ?</strong><br>
+          Un champ "code partenaire" est disponible sur la page de paiement — indiquez-y son nom pour qu'il/elle soit informé(e) de votre commande.
+        </p>
+
+        <p class="lien-standard">
+          Vous cherchez la version standard à 39€ ? <a href="ebook-prenom.html">Voir l'analyse de prénom classique →</a>
+        </p>
+      </div>
+
+    </div>
+
+    <div class="recap-inclus">
+      <h2>Ce que vous recevez</h2>
+      <div class="recap-grille">
+        <div class="recap-item">
+          <p class="icone">📄</p>
+          <h4>Livret PDF</h4>
+          <p>30 pages, 13 sections</p>
+        </div>
+        <div class="recap-item">
+          <p class="icone">🎧</p>
+          <h4>5 audios méditations</h4>
+          <p>Exclusives à la version Premium</p>
+        </div>
+        <div class="recap-item">
+          <p class="icone">🌳</p>
+          <h4>Analyse des grands-parents</h4>
+          <p>Une lecture plus profonde de votre lignée</p>
+        </div>
+        <div class="recap-item">
+          <p class="icone">💎</p>
+          <h4>Une analyse complète</h4>
+          <p>Et entièrement personnalisée</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © Sylvia Besuchet — Psychogénéalogie · <a href="/">sylviabesuchet.fr</a>
+  </footer>
+
+</body>
+</html>
