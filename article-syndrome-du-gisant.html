@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Syndrome du gisant : comprendre ce concept de psychogénéalogie — Sylvia Besuchet</title>
+  <meta name="description" content="Le syndrome du gisant, théorisé par le Dr Salomon Sellam, désigne un mécanisme transgénérationnel inconscient. Découvre ce que c'est et comment l'identifier dans ton histoire familiale." />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Syndrome du gisant : comprendre ce concept de psychogénéalogie",
+    "description": "Le syndrome du gisant, théorisé par le Dr Salomon Sellam, désigne un mécanisme transgénérationnel inconscient. Découvre ce que c'est et comment l'identifier dans ton histoire familiale.",
+    "author": {
+      "@type": "Person",
+      "name": "Sylvia Besuchet"
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "Sylvia Besuchet"
+    },
+    "mainEntityOfPage": "https://sylviabesuchet.fr/article-syndrome-du-gisant.html"
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cream:   #F7F3EE;
+      --dark:    #5A2E2A;
+      --gold:    #A66A3F;
+      --text:    #2C1A18;
+      --muted:   #8A6F6A;
+      --line:    rgba(90,46,42,0.15);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--cream);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      line-height: 1.75;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 5vw;
+      background: rgba(247,243,238,0.92);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.25rem;
+      color: var(--dark);
+      text-decoration: none;
+    }
+    .nav-back {
+      color: var(--dark);
+      font-size: 0.82rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .nav-back:hover { color: var(--gold); }
+
+    article {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 3.5rem 5vw 4rem;
+    }
+
+    .section-label {
+      display: block;
+      font-size: 0.78rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 400;
+      font-size: clamp(1.7rem, 4vw, 2.4rem);
+      color: var(--dark);
+      line-height: 1.3;
+      margin-bottom: 1.8rem;
+    }
+
+    .chapo {
+      font-size: 1.15rem;
+      color: var(--dark);
+      font-style: italic;
+      border-left: 3px solid var(--gold);
+      padding-left: 1.2rem;
+      margin-bottom: 2.5rem;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 400;
+      font-size: 1.5rem;
+      color: var(--dark);
+      margin: 2.5rem 0 1rem;
+    }
+
+    p {
+      margin-bottom: 1.3rem;
+      font-size: 1.03rem;
+    }
+
+    ul {
+      margin: 0 0 1.5rem 1.3rem;
+    }
+    li {
+      margin-bottom: 0.6rem;
+    }
+
+    .encadre {
+      background: rgba(166,106,63,0.08);
+      border-left: 3px solid var(--gold);
+      padding: 1.3rem 1.5rem;
+      margin-bottom: 1.8rem;
+      font-size: 0.95rem;
+      color: var(--dark);
+    }
+    .encadre strong { color: var(--dark); }
+
+    .divider {
+      width: 60px;
+      height: 1px;
+      background: var(--line);
+      margin: 3rem auto;
+    }
+
+    .cta-box {
+      background: var(--dark);
+      border-radius: 3px;
+      padding: 2.5rem 2rem;
+      text-align: center;
+      margin-top: 3rem;
+    }
+    .cta-box .section-label { color: var(--gold); }
+    .cta-box h3 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 400;
+      font-size: 1.4rem;
+      color: var(--cream);
+      margin-bottom: 0.8rem;
+    }
+    .cta-box p {
+      color: rgba(247,243,238,0.7);
+      font-size: 0.98rem;
+      margin-bottom: 1.5rem;
+    }
+    .btn-primary {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--cream);
+      text-decoration: none;
+      padding: 0.9rem 2rem;
+      font-size: 0.82rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      border-radius: 2px;
+      transition: background 0.25s, transform 0.25s;
+    }
+    .btn-primary:hover { background: var(--cream); color: var(--dark); transform: translateY(-1px); }
+
+    .cta-box .offers {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.2rem;
+      margin-top: 1.5rem;
+    }
+    .cta-box .offer {
+      background: rgba(247,243,238,0.06);
+      border: 1px solid rgba(247,243,238,0.15);
+      border-radius: 3px;
+      padding: 1.5rem 1.3rem;
+      text-align: left;
+    }
+    .cta-box .offer h4 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 400;
+      font-size: 1.05rem;
+      color: var(--cream);
+      margin-bottom: 0.5rem;
+    }
+    .cta-box .offer p {
+      color: rgba(247,243,238,0.65);
+      font-size: 0.88rem;
+      margin-bottom: 1rem;
+    }
+    .cta-box .offer a {
+      display: inline-block;
+      color: var(--cream);
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-bottom: 1px solid var(--gold);
+      padding-bottom: 2px;
+    }
+    .cta-box .offer a:hover { color: var(--gold); }
+
+    .lien-retour {
+      display: block;
+      text-align: center;
+      margin-top: 2.5rem;
+      font-size: 0.9rem;
+    }
+    .lien-retour a { color: var(--dark); }
+
+    footer {
+      text-align: center;
+      padding: 2.5rem 5vw;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+    footer a { color: var(--dark); }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/" class="nav-name">Sylvia Besuchet</a>
+    <a href="/" class="nav-back">← Retour au site</a>
+  </nav>
+
+  <article>
+    <p class="section-label">Concepts de psychogénéalogie</p>
+    <h1>Syndrome du gisant : quand on porte, sans le savoir, le deuil d'un autre</h1>
+
+    <p class="chapo">Tu te sens parfois "à côté" de ta propre vie, comme spectateur·rice plutôt qu'actrice ? Tu as du mal à te sentir légitime d'exister, de réussir, ou même de prendre toute la place ? Ce sentiment diffus porte un nom en psychogénéalogie : le syndrome du gisant.</p>
+
+    <p>Certaines personnes traversent leur existence avec l'impression de ne pas être tout à fait à leur place — comme si elles vivaient une vie qui ne leur appartenait pas complètement. Ce ressenti n'est pas anodin, et la psychogénéalogie propose une grille de lecture précise pour le comprendre : le syndrome du gisant.</p>
+
+    <h2>D'où vient ce concept</h2>
+
+    <p>Le syndrome du gisant a été mis en évidence au début des années 2000 par le <strong>Dr Salomon Sellam</strong>, médecin et psychosomaticien, à partir de son observation clinique. Il lui a consacré un ouvrage entier, <em>Le Syndrome du Gisant, un subtil enfant de remplacement</em>, devenu une référence dans le champ de la psychogénéalogie et de la psychosomatique clinique.</p>
+
+    <p>Sellam définit ce syndrome comme une <strong>réparation transgénérationnelle automatique et inconsciente</strong>, mise en route à la suite d'un décès vécu par la famille comme prématuré, injuste ou impossible à accepter.</p>
+
+    <h2>Comment ça se met en place</h2>
+
+    <p>Selon cette approche, la vie d'un individu suit une trame faite de plusieurs repères : sa conception, sa naissance, son autonomisation, le moment où il devient à son tour parent, puis grand-parent, et enfin son décès. Quand cette trame est respectée, le deuil peut se faire normalement au sein de la famille.</p>
+
+    <p>Mais quand un décès survient trop tôt — un enfant, un adolescent, un jeune adulte — ce deuil devient souvent impossible à faire pleinement, en particulier pour la mère ou les proches directs. La famille, sans en avoir conscience, va alors chercher à "réparer" ce manque à travers un enfant né plus tard, qui héritera inconsciemment de la mission de combler ce vide.</p>
+
+    <p>Ce mécanisme peut se transmettre même à travers plusieurs générations, et se manifester sous différentes formes :</p>
+    <ul>
+      <li>Un sentiment permanent d'être "en trop" ou au contraire de ne jamais être tout à fait légitime</li>
+      <li>Une difficulté à profiter pleinement de sa vie, comme si on n'en avait "pas le droit"</li>
+      <li>Le sentiment d'être double, de porter une histoire qui n'est pas la sienne</li>
+      <li>Des troubles physiques ou psychologiques récurrents, sans cause médicale identifiée</li>
+      <li>Un prénom, une date ou une place dans la fratrie qui font étrangement écho à un ancêtre disparu</li>
+    </ul>
+
+    <div class="encadre">
+      Le Dr Sellam a également étudié les correspondances de dates possibles entre un patient et un ancêtre (dates de conception, naissance, décès), ainsi que certaines résonances de prénoms. Ces éléments sont des pistes de travail, pas des certitudes systématiques : chaque histoire familiale reste unique.
+    </div>
+
+    <h2>Se libérer du rôle</h2>
+
+    <p>La bonne nouvelle, c'est que ce mécanisme, une fois identifié, perd une grande partie de son emprise. Mettre en lumière le deuil non fait par la famille, nommer le drame resté sans mots, permet souvent aux symptômes de s'apaiser progressivement — parfois accompagné d'un geste symbolique qui vient clore ce qui n'avait jamais pu l'être.</p>
+
+    <p>Ce travail passe par l'exploration de ton arbre généalogique : repérer les décès prématurés, les deuils qui semblent ne jamais avoir été traversés, les silences autour d'un prénom ou d'une date. Une fois ce fil retrouvé, il devient possible de distinguer ta propre vie de celle que tu portais, sans le savoir, pour quelqu'un d'autre.</p>
+
+    <p>Ce mécanisme rejoint souvent un autre phénomène fréquent en psychogénéalogie : les <a href="/article-schemas-repetitifs.html" style="color: var(--dark); text-decoration: underline;">schémas répétitifs</a> qui se rejouent de génération en génération, notamment en amour.</p>
+
+    <div class="divider"></div>
+
+    <div class="cta-box">
+      <p class="section-label">Pour aller plus loin</p>
+      <h3>Explorer ce que tu portes peut-être</h3>
+      <p>Identifier un éventuel syndrome du gisant demande d'explorer ton histoire familiale en profondeur — c'est exactement ce que permettent ces deux accompagnements.</p>
+      <div class="offers">
+        <div class="offer">
+          <h4>📖 Livret personnalisé</h4>
+          <p>Analyse de ton prénom et décodage de tes transmissions familiales.</p>
+          <a href="/ebook-prenom.html">Découvrir le livret →</a>
+        </div>
+        <div class="offer">
+          <h4>🌿 Séance individuelle</h4>
+          <p>Une heure ensemble pour explorer ton arbre et identifier les deuils non faits dans ta lignée.</p>
+          <a href="/#rdv">Réserver ma séance →</a>
+        </div>
+      </div>
+    </div>
+
+    <p class="lien-retour"><a href="/extrait.html">← Voir toutes les ressources gratuites</a></p>
+  </article>
+
+  <footer>
+    © Sylvia Besuchet — Psychogénéalogie · <a href="/">sylviabesuchet.fr</a>
+  </footer>
+
+</body>
+</html>
