@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ce que vos prénoms disent de vous — Ebook personnalisé | Sylvia Besuchet</title>
+  <meta name="description" content="Analyse de prénom transgénérationnelle personnalisée — psychogénéalogie et mémoires familiales. Livret PDF de 30 pages, 13 sections." />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Livret Prénom - Analyse transgénérationnelle",
+    "description": "Livret personnalisé décryptant votre prénom sous l'angle de la psychogénéalogie : origines, transmission familiale et schémas inconscients liés à votre identité.",
+    "image": "https://sylviabesuchet.fr/ebook-prenom-cover.png",
+    "brand": {
+      "@type": "Brand",
+      "name": "Sylvia Besuchet"
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": "https://sylviabesuchet.fr/ebook-prenom.html",
+      "priceCurrency": "EUR",
+      "price": "39.00",
+      "availability": "https://schema.org/InStock",
+      "seller": {
+        "@type": "Person",
+        "name": "Sylvia Besuchet"
+      }
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "2"
+    },
+    "review": [
+      {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Christelle"
+        },
+        "reviewBody": "Analyse personnalisée du prénom fascinante, éléments transgénérationnels très pertinents, analyse juste et éclairante."
+      },
+      {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "G."
+        },
+        "reviewBody": "E-book complet, clair, rédigé avec soin et bienveillance, permet une belle réflexion sur les héritages transgénérationnels."
+      }
+    ]
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --creme:   #F7F3EE;
+      --bordeaux:#5A2E2A;
+      --dore:    #A66A3F;
+      --brun:    #8A7355;
+      --ligne:   rgba(90,46,42,0.15);
+    }
+
+    body {
+      background: var(--creme);
+      color: var(--bordeaux);
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 19px;
+      line-height: 1.6;
+    }
+
+    h1, h2, h3, .brand { font-family: 'Playfair Display', serif; color: var(--bordeaux); }
+
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 0 5vw 100px; }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 5vw;
+      background: rgba(247,243,238,0.92);
+      border-bottom: 1px solid var(--ligne);
+      margin-bottom: 3rem;
+    }
+    .nav-name { font-family: 'Playfair Display', serif; font-size: 1.25rem; color: var(--bordeaux); text-decoration: none; }
+    .nav-back {
+      color: var(--bordeaux); font-size: 0.82rem; font-weight: 600; letter-spacing: 0.06em;
+      text-transform: uppercase; text-decoration: none; font-family: 'Playfair Display', serif;
+    }
+    .nav-back:hover { color: var(--dore); }
+
+    .produit {
+      display: grid;
+      grid-template-columns: minmax(260px, 380px) 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+    @media (max-width: 760px) {
+      .produit { grid-template-columns: 1fr; }
+    }
+
+    .couverture img {
+      width: 100%;
+      border-radius: 4px;
+      box-shadow: 0 20px 50px rgba(90,46,42,0.18);
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 13px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--dore);
+      font-family: 'Playfair Display', serif;
+      font-weight: 600;
+      margin-bottom: 14px;
+    }
+
+    h1.titre {
+      font-size: clamp(28px, 4vw, 40px);
+      font-weight: 600;
+      line-height: 1.22;
+      margin-bottom: 10px;
+    }
+
+    .soustitre {
+      color: var(--brun);
+      font-size: 20px;
+      font-style: italic;
+      margin-bottom: 28px;
+    }
+
+    ul.points {
+      list-style: none;
+      margin-bottom: 32px;
+    }
+    ul.points li {
+      display: flex;
+      gap: 12px;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--ligne);
+      font-size: 18px;
+    }
+    ul.points li:last-child { border-bottom: none; }
+    ul.points .puce { color: var(--dore); font-weight: 600; flex-shrink: 0; }
+
+    .infos-format {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      color: var(--brun);
+      font-size: 16px;
+      margin-bottom: 32px;
+    }
+    .infos-format span { display: flex; align-items: center; gap: 6px; }
+
+    .prix-bloc {
+      background: #fff;
+      border: 1px solid var(--ligne);
+      border-radius: 4px;
+      padding: 28px;
+      margin-bottom: 20px;
+    }
+    .prix {
+      font-family: 'Playfair Display', serif;
+      font-size: 34px;
+      color: var(--bordeaux);
+      font-weight: 600;
+      margin-bottom: 18px;
+    }
+
+    .btn-commander {
+      display: block;
+      width: 100%;
+      text-align: center;
+      background: var(--bordeaux);
+      color: var(--creme);
+      text-decoration: none;
+      padding: 18px 24px;
+      font-family: 'Playfair Display', serif;
+      font-size: 17px;
+      font-weight: 600;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+      border-radius: 3px;
+      transition: background .25s, transform .25s;
+    }
+    .btn-commander:hover { background: var(--dore); transform: translateY(-1px); }
+
+    .rassurance {
+      font-size: 15px;
+      color: var(--brun);
+      text-align: center;
+      margin-top: 14px;
+    }
+
+    .promo-toggle {
+      font-size: 15px;
+      color: var(--dore);
+      text-decoration: underline;
+      cursor: pointer;
+      background: none;
+      border: none;
+      font-family: 'Cormorant Garamond', serif;
+      padding: 0;
+    }
+    .promo-note {
+      display: none;
+      font-size: 15px;
+      color: var(--brun);
+      margin-top: 10px;
+      line-height: 1.5;
+    }
+    .promo-note.visible { display: block; }
+
+    .avis-clients {
+      margin-top: 60px;
+      padding-top: 50px;
+      border-top: 1px solid var(--ligne);
+      text-align: center;
+    }
+    .avis-clients h2 {
+      font-size: 26px;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+    .avis-carte {
+      max-width: 700px;
+      margin: 0 auto 22px auto;
+      padding: 26px 30px;
+      background: #fff;
+      border-radius: 4px;
+      box-shadow: 0 8px 24px rgba(90,46,42,0.08);
+      text-align: left;
+    }
+    .avis-carte .etoiles {
+      color: var(--dore);
+      font-size: 18px;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+    .avis-carte p.texte {
+      font-style: italic;
+      font-size: 18px;
+      line-height: 1.6;
+      color: var(--bordeaux);
+    }
+    .avis-carte p.auteur {
+      margin-top: 12px;
+      font-family: 'Playfair Display', serif;
+      font-weight: 600;
+      font-size: 16px;
+      color: var(--dore);
+    }
+
+    .description-longue {
+      margin-top: 60px;
+      padding-top: 50px;
+      border-top: 1px solid var(--ligne);
+      max-width: 720px;
+    }
+    .description-longue h2 {
+      font-size: 26px;
+      font-weight: 600;
+      margin-bottom: 18px;
+    }
+    .description-longue p { margin-bottom: 18px; font-size: 19px; }
+
+    footer {
+      text-align: center;
+      padding: 3rem 5vw 0;
+      color: var(--brun);
+      font-size: 15px;
+    }
+    footer a { color: var(--bordeaux); }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/" class="nav-name">Sylvia Besuchet</a>
+    <a href="/" class="nav-back">← Retour à l'accueil</a>
+  </nav>
+
+  <div class="wrap">
+    <div class="produit">
+
+      <div class="couverture">
+        <img src="ebook-prenom-cover.png" alt="Couverture du livret Ce que vos prénoms disent de vous sans que vous le sachiez, par Sylvia Besuchet" />
+      </div>
+
+      <div class="contenu">
+        <p class="badge">Livret personnalisé</p>
+        <h1 class="titre">Ce que vos prénoms disent de vous sans que vous le sachiez</h1>
+        <p class="soustitre">Analyse de Prénom transgénérationnelle — Psychogénéalogie &amp; Transmission Familiale</p>
+
+        <ul class="points">
+          <li><span class="puce">◆</span> Étymologie et racine concrète de votre prénom</li>
+          <li><span class="puce">◆</span> Mémoires transmises par vos parents et grands-parents</li>
+          <li><span class="puce">◆</span> Dynamiques émotionnelles héritées</li>
+          <li><span class="puce">◆</span> 13 sections détaillées, 30 pages</li>
+        </ul>
+
+        <div class="infos-format">
+          <span>📄 PDF personnalisé</span>
+          <span>📖 30 pages</span>
+          <span>⬇ Livraison numérique</span>
+        </div>
+
+        <div class="prix-bloc">
+          <div class="prix">39 €</div>
+          <a href="https://buy.stripe.com/3cIdR83X18Rz4X6gjC6wE01" target="_blank" rel="noopener" class="btn-commander">
+            Commandez votre analyse
+          </a>
+          <p class="rassurance">Paiement sécurisé par Stripe · Livret envoyé après complétion de vos informations</p>
+        </div>
+
+        <button class="promo-toggle" onclick="document.getElementById('promo-note').classList.toggle('visible')">
+          Vous avez un code partenaire ?
+        </button>
+        <p class="promo-note" id="promo-note">
+          Le champ pour renseigner votre code de remise apparaît directement sur la page de paiement sécurisée, une fois que vous cliquez sur "Commandez votre analyse".
+        </p>
+
+        <p style="margin-top:28px; font-size:16px; color:var(--brun);">
+          Analyse unique — votre prénom, vos parents : votre lignée.
+        </p>
+
+        <p style="margin-top:18px; font-size:16px; color:var(--brun); padding-left:14px; border-left:2px solid var(--ligne);">
+          💎 Envie d'aller plus loin ? Découvrez la <a href="ebook-prenom-premium.html" style="color:var(--dore);">version Premium à 59€</a> — analyse des grands-parents, 5 méditations audio exclusives et bien plus.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="avis-clients">
+      <h2>Ce qu'en disent mes clientes</h2>
+
+      <div class="avis-carte">
+        <p class="etoiles">★★★★★</p>
+        <p class="texte">« J'ai fait une analyse personnalisée de mon prénom avec Sylvia et la psychologie des prénoms. C'était absolument fascinant ! En prenant en compte les prénoms de mes parents, elle a su mettre en lumière des éléments transgénérationnels très pertinents. J'ai appris énormément sur moi-même, je trouve que l'analyse était juste, profonde, et vraiment éclairante. J'ai pu mieux comprendre certaines dynamiques de ma vie. Je recommande à 100 % ! »</p>
+        <p class="auteur">— Christelle</p>
+      </div>
+
+      <div class="avis-carte">
+        <p class="etoiles">★★★★★</p>
+        <p class="texte">« Un immense merci pour ce magnifique e-book personnalisé ! J'ai apprécié le découvrir. Il est très complet, clair et rédigé avec beaucoup de soin et de bienveillance. J'ai eu de nombreux déclics en le lisant et il m'a permis de mieux me comprendre, tout en ouvrant une belle réflexion sur la libération de certains schémas et héritages transgénérationnels. On sent toute la passion et l'investissement derrière ce travail. Je recommande cette praticienne les yeux fermés ! »</p>
+        <p class="auteur">— G.</p>
+      </div>
+    </div>
+
+    <div class="description-longue">
+      <h2>Votre prénom. Une clé. Une histoire. Un héritage.</h2>
+      <p>Chaque prénom porte en lui bien plus qu'une simple sonorité : il raconte, souvent sans le savoir, ce qui s'est transmis avant vous — des attentes, des mémoires, parfois des secrets de famille jamais formulés.</p>
+      <p>Cette analyse personnalisée explore l'origine profonde de votre prénom, ce que transmettent les prénoms de vos parents, les mémoires familiales inconscientes qui s'y rattachent, et les schémas émotionnels hérités qu'ils peuvent révéler.</p>
+      <p>Un livret entièrement personnalisé, rédigé à partir de votre prénom et de ceux de votre lignée, pour éclairer d'un jour nouveau ce que vous portez sans le savoir.</p>
+    </div>
+  </div>
+
+  <footer>
+    © Sylvia Besuchet — Psychogénéalogie · <a href="/">sylviabesuchet.fr</a>
+  </footer>
+
+</body>
+</html>
